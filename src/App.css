@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px 30px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-inner {
+  padding-top: 5px;
+  display: flex;
+}
+
+.header-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding-right: 30px;
+  color: black;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: black;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+  padding: 0px;
+}
+
+.slide {
+  height: 70vh;
+  width: 100%;
+  display: inline-block;
+}
+
+.home-section1 {
+  background: linear-gradient(to bottom right, #3d97ce 0%, #12debb 100%);
+  margin-top: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+
+.text1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.but1 {
+  height: 64px;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background: #212432;
+  padding: 20px 0px 20px 20px;
+  color: white;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-inner2 {
+  display: flex;
+}
+
+.text2 {
+  padding-right: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+.text3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.home-section2 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+.ecard {
+  width: 50px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: linear-gradient(to bottom right, #3d97ce 0%, #12debb 100%);
+  margin-right: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.exerciseList {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.exerciseList2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.exerciseitem {
+  width: 400px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  background: #12debb;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icard {
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: rgb(89, 89, 221);
+  border-radius: 10px;
+  color: white;
+  width: 50px;
+  text-transform: capitalize;
+}
+
+.icard2 {
+  padding: 10px 10px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: yellow;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.cardflex {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.text5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.search {
+  height: 64px;
+  width: 50%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 15px;
+  border: none;
+}
+
+.exercise-section1 {
+  background: linear-gradient(to bottom right, #3d97ce 0%, #12debb 100%);
+  height: 15vh;
+  padding-top: 40px;
+}
+
+.exercise-section2 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
