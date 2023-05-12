@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ExerciseCard from "../components/ExerciseCard";
 import data from "../data.json";
-import { useNavigate } from "react-router-dom";
 
 export default function Exercise() {
-  const navigate = useNavigate();
   const startData = data.slice(0, 50);
   const [datalist, setData] = useState(startData);
 

@@ -21,12 +21,7 @@ export default function Home() {
     setData(newData);
   };
 
-  const images = [
-    "./images/f1.webp",
-    "./images/f2.jpeg",
-    "./images/f3.jpeg",
-    "./images/f4.jpeg",
-  ];
+  const images = ["./images/f2.jpeg", "./images/f3.jpeg", "./images/f4.jpeg"];
   const [index, setIndex] = useState(0);
   const delay = 5000;
 

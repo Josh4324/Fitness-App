@@ -116,7 +116,6 @@ a {
 }
 
 .ecard {
-  width: 50px;
   padding: 10px 10px 10px 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -125,6 +124,7 @@ a {
   margin-right: 30px;
   color: white;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .exerciseList {
@@ -158,8 +158,8 @@ a {
   background: rgb(89, 89, 221);
   border-radius: 10px;
   color: white;
-  width: 50px;
   text-transform: capitalize;
+  margin-right: 20px;
 }
 
 .icard2 {
@@ -174,8 +174,6 @@ a {
 
 .cardflex {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
   margin-top: 20px;
   margin-left: 10px;
 }
@@ -211,4 +209,48 @@ a {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.detail {
+  width: 50%;
+}
+
+.dimg {
+  width: 80%;
+}
+
+.detail-flex {
+  display: flex;
+  height: 75vh;
+}
+
+.text6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.text7 {
+  font-size: 24px;
+  width: 90%;
+  margin-top: 100px;
+  line-height: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 50px;
+}
+
+.text8 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-align: center;
 }
