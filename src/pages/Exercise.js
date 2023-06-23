@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ExerciseCard from "../components/ExerciseCard";
@@ -7,6 +7,7 @@ import data from "../data.json";
 export default function Exercise() {
   const startData = data.slice(0, 50);
   const [datalist, setData] = useState(startData);
+  const searchRef = useRef();
 
   const filterData = (type) => {
     let newData;
@@ -19,12 +20,35 @@ export default function Exercise() {
     setData(newData);
   };
 
+  const searchData = () => {
+    let newData;
+    const text = searchRef.current.value;
+    if (text === "") {
+      newData = data.slice(0, 50);
+    } else {
+      newData = data
+        .filter(
+          (item) =>
+            item.name.includes(text.toLowerCase()) ||
+            item.bodyPart.includes(text.toLowerCase())
+        )
+        .slice(0, 50);
+    }
+
+    setData(newData);
+  };
+
   return (
     <div>
       <Header />
       <main>
         <section className="exercise-section1">
-          <input className="search" placeholder="Search Exercise" />
+          <input
+            ref={searchRef}
+            className="search"
+            placeholder="Search Exercise"
+            onChange={searchData}
+          />
         </section>
         <section className="exercise-section2">
           <div className="exerciseList">

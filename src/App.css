@@ -254,3 +254,34 @@ a {
   font-size: 24px;
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  .but1 {
+    height: 54px;
+    width: 90%;
+    font-size: 20px;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .logo {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+
+  .header-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding-right: 30px;
+    color: black;
+  }
+
+  .exerciseitem {
+    width: 100%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background: #12debb;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

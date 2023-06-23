@@ -51,7 +51,7 @@ export default function Home() {
     <div>
       <Header />
       <main className="main">
-        <section>
+        <section style={{ overflow: "hidden" }}>
           <div
             className="slideshowSlider"
             style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
